@@ -1,0 +1,342 @@
+# depslib dependency file v1.0
+1366183343 source:/home/turupawn/Projects/CodeBlocks/SdlRunner/main.cpp
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	<string>
+
+1366091833 source:/home/turupawn/Projects/CodeBlocks/SdlRunner/Character.cpp
+	"Character.h"
+
+1366091833 /home/turupawn/Projects/CodeBlocks/SdlRunner/Character.h
+
+1366097508 source:/home/turupawn/Projects/CodeBlocks/SdlRunner/Enemy.cpp
+	"Enemy.h"
+
+1366099294 /home/turupawn/Projects/CodeBlocks/SdlRunner/Enemy.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
+
+1366094277 source:/home/turupawn/Projects/CodeBlocks/SdlRunner/Background.cpp
+	"Background.h"
+
+1366094032 /home/turupawn/Projects/CodeBlocks/SdlRunner/Background.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
+
+1366183191 source:/home/turupawn/Projects/CodeBlocks/SdlRunner/Player.cpp
+	"Player.h"
+
+1366182651 /home/turupawn/Projects/CodeBlocks/SdlRunner/Player.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
+
+1366094277 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Background.cpp
+	"Background.h"
+
+1366094032 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Background.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
+
+1366192950 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Enemy.cpp
+	"Enemy.h"
+
+1366190372 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Enemy.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
+
+1366192872 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Player.cpp
+	"Player.h"
+
+1366182651 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Player.h
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	<string>
+
+1366192753 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/main.cpp
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	<string>
+
+1366189237 source:/home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Timer.cpp
+	"Timer.h"
+
+1366189330 /home/turupawn/Projects/CodeBlocks/Progra 3/Ejemplos/SdlRunner/Timer.h
+	"SDL/SDL.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\background.cpp
+	"Background.h"
+
+1366393825 c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\background.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366692594 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\enemy.cpp
+	"Enemy.h"
+
+1366396233 c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\enemy.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366661802 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	<string>
+
+1366661052 c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\player.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366393872 c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\timer.h
+	"SDL.h"
+
+1366695967 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\player.cpp
+	"Player.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\lab progra iii\new folder\semana2-master\semana2-master\timer.cpp
+	"Timer.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\background.cpp
+	"Background.h"
+
+1366393825 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\background.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366692594 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\enemy.cpp
+	"Enemy.h"
+
+1366396233 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\enemy.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366994634 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	"Llama.h"
+	<string>
+
+1366919765 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\player.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366393872 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\timer.h
+	"SDL.h"
+
+1366994340 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\player.cpp
+	"Player.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\timer.cpp
+	"Timer.h"
+
+1366920977 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\llama.cpp
+	"Llama.h"
+
+1366920606 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\new folder\semana2-master\semana2-master\llama.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\background.cpp
+	"Background.h"
+
+1366393825 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\background.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366692594 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\enemy.cpp
+	"Enemy.h"
+
+1366396233 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\enemy.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366920977 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\llama.cpp
+	"Llama.h"
+
+1366920606 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\llama.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1367444212 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	"Llama.h"
+	<string>
+
+1367444193 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\player.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366393872 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\timer.h
+	"SDL.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\timer.cpp
+	"Timer.h"
+
+1367444193 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2-master\player.cpp
+	"Player.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\semana2\background.cpp
+	"Background.h"
+
+1366393825 c:\users\owner\desktop\escritorio\u\2013\semana2\background.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366692594 source:c:\users\owner\desktop\escritorio\u\2013\semana2\enemy.cpp
+	"Enemy.h"
+
+1366396233 c:\users\owner\desktop\escritorio\u\2013\semana2\enemy.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366920977 source:c:\users\owner\desktop\escritorio\u\2013\semana2\llama.cpp
+	"Llama.h"
+
+1366920606 c:\users\owner\desktop\escritorio\u\2013\semana2\llama.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1367444310 source:c:\users\owner\desktop\escritorio\u\2013\semana2\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	"Llama.h"
+	<string>
+
+1367444193 c:\users\owner\desktop\escritorio\u\2013\semana2\player.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1366393872 c:\users\owner\desktop\escritorio\u\2013\semana2\timer.h
+	"SDL.h"
+
+1367444310 source:c:\users\owner\desktop\escritorio\u\2013\semana2\player.cpp
+	"Player.h"
+
+1366189876 source:c:\users\owner\desktop\escritorio\u\2013\semana2\timer.cpp
+	"Timer.h"
+
+1367989858 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\background.cpp
+	"Background.h"
+	<string>
+
+1367989757 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\background.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+	"SDL_mixer.h"
+	"SDL_ttf.h"
+
+1367966736 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\enemy.cpp
+	"Enemy.h"
+
+1367966511 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\enemy.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+	"Background.h"
+
+1367445290 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\llama.cpp
+	"Llama.h"
+
+1367445290 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\llama.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1367985129 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\main.cpp
+	"SDL.h"
+	"SDL_image.h"
+	"Background.h"
+	"Player.h"
+	"Enemy.h"
+	"Timer.h"
+	"Llama.h"
+	<string>
+	"Screen.h"
+	"Menu.h"
+	<time.h>
+	<iostream>
+
+1367983741 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\player.h
+	"SDL.h"
+	"SDL_image.h"
+	"Llama.h"
+	"Enemy.h"
+	<string>
+
+1367445291 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\timer.h
+	"SDL.h"
+
+1367985201 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\player.cpp
+	"Player.h"
+
+1367445291 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\timer.cpp
+	"Timer.h"
+
+1367956977 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.h
+	"SDL.h"
+	"SDL_image.h"
+	"Timer.h"
+
+1367960170 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.cpp
+	"Screen.h"
+
+1367960504 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\menu.h
+	"SDL.h"
+	"SDL_image.h"
+	<string>
+
+1367962230 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\menu.cpp
+	"Menu.h"
+
