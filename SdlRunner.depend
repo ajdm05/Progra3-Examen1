@@ -266,11 +266,11 @@
 1366189876 source:c:\users\owner\desktop\escritorio\u\2013\semana2\timer.cpp
 	"Timer.h"
 
-1367989858 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\background.cpp
+1368170496 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\background.cpp
 	"Background.h"
 	<string>
 
-1367989757 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\background.h
+1368170496 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\background.h
 	"SDL.h"
 	"SDL_image.h"
 	<string>
@@ -294,7 +294,7 @@
 	"SDL_image.h"
 	<string>
 
-1367985129 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\main.cpp
+1368169486 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\main.cpp
 	"SDL.h"
 	"SDL_image.h"
 	"Background.h"
@@ -304,32 +304,33 @@
 	"Llama.h"
 	<string>
 	"Screen.h"
-	"Menu.h"
 	<time.h>
 	<iostream>
 
-1367983741 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\player.h
+1368169287 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\player.h
 	"SDL.h"
 	"SDL_image.h"
 	"Llama.h"
 	"Enemy.h"
+	"SDL_mixer.h"
 	<string>
 
 1367445291 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\timer.h
 	"SDL.h"
 
-1367985201 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\player.cpp
+1368169456 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\player.cpp
 	"Player.h"
 
 1367445291 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\timer.cpp
 	"Timer.h"
 
-1367956977 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.h
+1368139849 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.h
 	"SDL.h"
 	"SDL_image.h"
 	"Timer.h"
+	<iostream>
 
-1367960170 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.cpp
+1368168263 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.cpp
 	"Screen.h"
 
 1367960504 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\menu.h

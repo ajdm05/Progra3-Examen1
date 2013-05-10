@@ -21,6 +21,9 @@ Player::Player(SDL_Surface *screen)
     this->current_frame=0;
     this->isJumping = false;
     this->murio = false;
+
+    Mix_OpenAudio( 22050, MIX_DEFAULT_FORMAT, 2, 4096 );
+
 }
 
 Player::~Player()
@@ -51,6 +54,7 @@ void Player::logic()
 
 void Player::jump()
 {
+    jumper = Mix_LoadWAV( "jump.ogg" );
     current_frame = 4;
     velocity=-30;
 }
@@ -93,4 +97,30 @@ void Player::perdio(int x, int y)
 {
     if(this->x-x<50 && this->x-x>-50 && this->y-y<50 && this->y-y>-50)
         this->perder();
+}
+
+void Player::isJump()
+{
+    SDL_Event event;
+    //Quit flag
+        //If there's an event to handle
+        if( SDL_PollEvent( &event ) )
+        {
+            //If a key was pressed
+            if( event.type == SDL_KEYDOWN )
+            {
+                //Set the proper message surface
+                switch( event.key.keysym.sym )
+                {
+                    case SDLK_ESCAPE: break;
+
+                    case SDLK_UP:
+                        if (! this->isJumping){
+                            this->jump();
+                            Mix_PlayChannel( -1, jumper, 0 );
+                            break;
+                        }
+                }
+            }
+        }
 }

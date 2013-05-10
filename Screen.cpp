@@ -8,11 +8,19 @@ Screen::Screen()
 
 Screen::~Screen()
 {
-    //dtor
+    delete this->pantalla;
+
 }
 
 bool Screen::init()
 {
+    /*if( TTF_Init() == -1 )
+    {
+        return false;
+    }*/
+
+
+
     //Initialize all SDL subsystems
     if( SDL_Init( SDL_INIT_EVERYTHING ) == -1 )
     {
@@ -47,3 +55,5 @@ SDL_Surface* Screen::getScreen()
 
     return this->pantalla;
 }
+
+

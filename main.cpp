@@ -17,18 +17,38 @@ and may not be redistributed without written permission.*/
 
 using namespace std;
 
+/*std::string toString(int number)
+{
+    if (number == 0)
+        return "0";
+    std::string temp="";
+    std::string returnvalue="";
+    while (number>0)
+    {
+        temp+=number%10+48;
+        number/=10;
+    }
+    for (int i=0;i<(int)temp.length();i++)
+        returnvalue+=temp[temp.length()-i-1];
+    return returnvalue;
+}*/
 
 int main( int argc, char* args[] )
 {
     //Initialize
     Screen game;
-
+    int score = 0;
     game.init();
     int random;
     srand(time(NULL));
 
     game.update=new Timer();
     game.update->start();
+
+    /*TTF_Font *font = TTF_OpenFont( "lazy.ttf", 35 );
+    SDL_Color textColor = { 0, 0, 0 };
+    SDL_Surface * score_surface = NULL;*/
+
 
     SDL_Surface * game_over = IMG_Load( "game_over.png" );
 
@@ -55,18 +75,18 @@ int main( int argc, char* args[] )
                 switch( event.key.keysym.sym )
                 {
                     case SDLK_ESCAPE: quit = true; break;
+                    case SDLK_0:
+                        background.setNumPantalla(0);
+                        break;
                     case SDLK_1:
                         background.setNumPantalla(1);
                         break;
+                    case SDLK_2:
+                        background.setNumPantalla(2);
+                        break;
                     case SDLK_3:
-                        background.setNumPantalla(3);
                         quit = true;
                         break;
-
-                    case SDLK_UP:
-                        if (! player.isJumping){
-                            player.jump(); break;
-                        }
                 }
             }
             //If the user has Xed out the window
@@ -80,6 +100,8 @@ int main( int argc, char* args[] )
 
         background.logic();
         if (background.getNumPantalla() == 1){
+
+            game.update;
             player.logic();
             random = rand() % 2;
             if (random == 0)
@@ -98,6 +120,7 @@ int main( int argc, char* args[] )
         background.render();
         if (background.getNumPantalla() == 1)
         {
+            player.isJump();
             player.render();
             if(random == 0)
                 enemy.render();
@@ -105,7 +128,14 @@ int main( int argc, char* args[] )
                 llama.render();
         }
 
+        /*SDL_Surface * score_surface = TTF_RenderText_Solid( font, toString(score+=5).c_str(), textColor );
+        SDL_BlitSurface( score_surface, NULL, game.getScreen(), &game.offset );
+        SDL_Flip(game.getScreen());
+        SDL_FreeSurface( score_surface );*/
+
         game.frameCap();
+
+
 
         //Update the screen
         if( SDL_Flip( game.getScreen() ) == -1 )
@@ -115,7 +145,6 @@ int main( int argc, char* args[] )
 
 
     }
-
     while( quit == false )
     {
         //If there's an event to handle
@@ -128,11 +157,11 @@ int main( int argc, char* args[] )
                 switch( event.key.keysym.sym )
                 {
                     case SDLK_ESCAPE: quit = true; break;
-                    case SDLK_1:
-                        background.setNumPantalla(1);
+                    case SDLK_0:
+                        background.setNumPantalla(0);
                         break;
                     case SDLK_3:
-                        background.setNumPantalla(3);
+
                         quit = true;
                         break;
                 }

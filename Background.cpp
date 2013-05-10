@@ -6,6 +6,7 @@ Background::Background(SDL_Surface *screen)
     this->screen = screen;
     this->image[0] = IMG_Load( "menu/todo.png" );
     this->image[1] = IMG_Load( "background.png" );
+    this->image[2] = IMG_Load( "menu/menuInfo.png" );
     this->x = 0;
     this->numPantalla = 0;
     this->score = 0;
@@ -15,6 +16,7 @@ Background::~Background()
 {
     SDL_FreeSurface( image[0] );
     SDL_FreeSurface( image[1] );
+    SDL_FreeSurface( image[2] );
 }
 
 void Background::logic()
@@ -34,15 +36,18 @@ void Background::render()
         offset.x = x;
         offset.y = 0;
 
+
         SDL_BlitSurface( image[0], NULL, screen, &offset );
 
         offset.x = x+image[0]->w;
         offset.y = 0;
 
         SDL_BlitSurface( image[0], NULL, screen, &offset );
-    } else if (this->getNumPantalla() == 1)
-    {
+    }
 
+    if (this->getNumPantalla() == 1)
+    {
+        x = -1000;
         if(x<-image[1]->w)
             x=0;
         offset.x = x;
@@ -56,6 +61,22 @@ void Background::render()
         SDL_BlitSurface( image[1], NULL, screen, &offset );
 
     }
+    if (this->getNumPantalla() == 2)
+    {
+        x = -1000;
+        if(x<-image[2]->w)
+            x=0;
+        offset.x = x;
+        offset.y = 0;
+
+        SDL_BlitSurface( image[2], NULL, screen, &offset );
+
+        offset.x = x+image[2]->w;
+        offset.y = 0;
+
+        SDL_BlitSurface( image[2], NULL, screen, &offset );
+    }
+
 }
 
 void Background::setNumPantalla(int p)
@@ -85,32 +106,5 @@ bool Background::init()
     }
 }
 
-/*void Background::getScore(SDL_Surface *screen)
-{
 
-    TTF_Font *font = TTF_OpenFont( "lazy.ttf", 35 );
-    SDL_Color textColor = { 0, 0, 0 };
-    //SDL_Surface * score_surface = NULL;
 
-    SDL_Surface * score_surface = TTF_RenderText_Solid( font, toString(score+=5).c_str(), textColor );
-    SDL_BlitSurface( score_surface, NULL, screen, &offset );
-    SDL_Flip(screen);
-    SDL_FreeSurface( score_surface );
-
-}
-
-std::string toString(int number)
-{
-    if (number == 0)
-        return "0";
-    std::string temp="";
-    std::string returnvalue="";
-    while (number>0)
-    {
-        temp+=number%10+48;
-        number/=10;
-    }
-    for (int i=0;i<(int)temp.length();i++)
-        returnvalue+=temp[temp.length()-i-1];
-    return returnvalue;
-}*/
