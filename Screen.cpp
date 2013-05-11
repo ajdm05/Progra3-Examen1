@@ -14,13 +14,6 @@ Screen::~Screen()
 
 bool Screen::init()
 {
-    /*if( TTF_Init() == -1 )
-    {
-        return false;
-    }*/
-
-
-
     //Initialize all SDL subsystems
     if( SDL_Init( SDL_INIT_EVERYTHING ) == -1 )
     {

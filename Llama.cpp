@@ -8,8 +8,8 @@ Llama::Llama(SDL_Surface *screen)
     this->images[2] = IMG_Load( "assets/llama03.png" );
     this->x = 1000;
     this->y = 400;
-    this->acceleration=2;
-    this->velocity=0;
+    this->acceleration=6;
+    this->velocity=2;
     this->current_frame=0;
 }
 

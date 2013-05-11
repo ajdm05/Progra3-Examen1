@@ -17,7 +17,7 @@ and may not be redistributed without written permission.*/
 
 using namespace std;
 
-/*std::string toString(int number)
+std::string toString(int number)
 {
     if (number == 0)
         return "0";
@@ -31,11 +31,30 @@ using namespace std;
     for (int i=0;i<(int)temp.length();i++)
         returnvalue+=temp[temp.length()-i-1];
     return returnvalue;
-}*/
+}
+
+bool init()
+{
+    //Initialize SDL_mixer
+    if( Mix_OpenAudio( 22050, MIX_DEFAULT_FORMAT, 2, 4096 ) == -1 )
+    {
+        return false;
+    }
+
+    //Initialize SDL_ttf
+    if( TTF_Init() == -1 )
+    {
+        return false;
+    }
+
+    //If everything initialized fine
+    return true;
+}
 
 int main( int argc, char* args[] )
 {
     //Initialize
+    init();
     Screen game;
     int score = 0;
     game.init();
@@ -44,10 +63,11 @@ int main( int argc, char* args[] )
 
     game.update=new Timer();
     game.update->start();
+    Mix_Chunk *pantalla = Mix_LoadWAV( "pantalla.wav" );
 
-    /*TTF_Font *font = TTF_OpenFont( "lazy.ttf", 35 );
+    TTF_Font *font = TTF_OpenFont( "letra.ttf", 35 );
     SDL_Color textColor = { 0, 0, 0 };
-    SDL_Surface * score_surface = NULL;*/
+    SDL_Surface * score_surface = NULL;
 
 
     SDL_Surface * game_over = IMG_Load( "game_over.png" );
@@ -58,9 +78,10 @@ int main( int argc, char* args[] )
     Player player(game.getScreen());
     Enemy enemy(game.getScreen());
     Llama llama(game.getScreen());
-    //background.getScore(game.getScreen());
+
 
     SDL_Event event;
+    Mix_PlayChannel( -1, pantalla, 5 );
     //Quit flag
     bool quit = false;
     while( quit == false )
@@ -99,10 +120,12 @@ int main( int argc, char* args[] )
 
 
         background.logic();
+        player.isJump();
         if (background.getNumPantalla() == 1){
 
             game.update;
             player.logic();
+            player.isJump();
             random = rand() % 2;
             if (random == 0)
                 enemy.logic();
@@ -116,22 +139,22 @@ int main( int argc, char* args[] )
 
         }
 
+        SDL_Surface * score_surface = TTF_RenderText_Solid( font, toString(score+=5).c_str(), textColor );
+        SDL_BlitSurface( score_surface, NULL, game.getScreen(), &game.offset );
+        SDL_Flip(game.getScreen());
+        //SDL_FreeSurface( score_surface );
 
         background.render();
+        player.isJump();
         if (background.getNumPantalla() == 1)
         {
             player.isJump();
             player.render();
-            if(random == 0)
                 enemy.render();
-            if (random == 1)
                 llama.render();
         }
 
-        /*SDL_Surface * score_surface = TTF_RenderText_Solid( font, toString(score+=5).c_str(), textColor );
-        SDL_BlitSurface( score_surface, NULL, game.getScreen(), &game.offset );
-        SDL_Flip(game.getScreen());
-        SDL_FreeSurface( score_surface );*/
+
 
         game.frameCap();
 

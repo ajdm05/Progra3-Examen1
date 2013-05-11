@@ -286,7 +286,7 @@
 	<string>
 	"Background.h"
 
-1367445290 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\llama.cpp
+1368214899 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\llama.cpp
 	"Llama.h"
 
 1367445290 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\llama.h
@@ -294,7 +294,7 @@
 	"SDL_image.h"
 	<string>
 
-1368169486 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\main.cpp
+1368217389 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\main.cpp
 	"SDL.h"
 	"SDL_image.h"
 	"Background.h"
@@ -324,13 +324,15 @@
 1367445291 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\timer.cpp
 	"Timer.h"
 
-1368139849 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.h
+1368170822 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.h
 	"SDL.h"
 	"SDL_image.h"
+	"SDL_mixer.h"
 	"Timer.h"
 	<iostream>
+	<string>
 
-1368168263 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.cpp
+1368216812 source:c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\screen.cpp
 	"Screen.h"
 
 1367960504 c:\users\owner\desktop\escritorio\u\2013\ii periodo\labprograiii\semana2\menu.h
